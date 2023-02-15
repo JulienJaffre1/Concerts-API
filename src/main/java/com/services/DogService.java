@@ -24,6 +24,4 @@ public interface DogService {
      * Get all the dogs
      */
     List<DogDto> getAllDogs();
-
-
 }

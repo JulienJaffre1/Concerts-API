@@ -8,7 +8,7 @@ public class ConcertDto {
     private long id;
     private LocalDateTime dateDebut;
     private LocalDateTime dateFin;
-    private long groupe;
-    private long salle;
+    private long groupe_id;
+    private long soiree_id;
     private short prix;
 }
