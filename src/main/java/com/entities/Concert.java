@@ -1,6 +1,5 @@
 package com.entities;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
@@ -18,7 +17,7 @@ public class Concert {
     private long id;
     private LocalDateTime dateDebut;
     private LocalDateTime dateFin;
-    private long groupe;
-    private long salle;
+    private long groupe_id;
+    private long soiree_id;
     private short prix;
 }
