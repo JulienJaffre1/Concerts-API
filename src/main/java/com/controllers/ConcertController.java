@@ -24,7 +24,7 @@ public class ConcertController {
      */
     @GetMapping
     public List<ConcertDto> getConcerts() {
-        return ConcertService.getAllConcerts();
+        return concertService.getAllConcerts();
     }
 
     /**

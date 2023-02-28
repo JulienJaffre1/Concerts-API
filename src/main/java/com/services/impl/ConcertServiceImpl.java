@@ -1,6 +1,7 @@
 package com.services.impl;
 import com.dtos.ConcertDto;
 import com.entities.Concert;
+import com.mapper.ConcertMapper;
 import com.repositories.ConcertRepository;
 import com.services.ConcertService;
 import org.springframework.stereotype.Service;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service("concertService")
-public class ConcertServiceImpl implements ConcertService {
+public class ConcertServiceImpl implements ConcertService, ConcertMapper {
     private final ConcertRepository concertRepository;
 
     public ConcertServiceImpl(ConcertRepository concertRepository) {
@@ -45,7 +46,7 @@ public class ConcertServiceImpl implements ConcertService {
         return concertDtos;
     }
 
-    private ConcertDto concertEntityToDto(Concert concert){
+    public ConcertDto concertEntityToDto(Concert concert){
         ConcertDto concertDto = new ConcertDto();
         concertDto.setId(concert.getId());
         concertDto.setDateDebut(concert.getDateDebut());
@@ -56,7 +57,7 @@ public class ConcertServiceImpl implements ConcertService {
         return concertDto;
     }
 
-    private Concert concertDtoToEntity(ConcertDto concertDto){
+    public Concert concertDtoToEntity(ConcertDto concertDto){
         Concert concert = new Concert();
         concert.setId(concertDto.getId());
         concert.setDateDebut(concertDto.getDateDebut());
