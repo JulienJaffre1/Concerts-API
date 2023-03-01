@@ -7,6 +7,6 @@ import java.time.LocalDateTime;
 public class SoireeDto {
     private long id;
     private String nom;
-    private long salle;
+    private long salle_id;
     private LocalDateTime date;
 }

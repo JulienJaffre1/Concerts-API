@@ -15,6 +15,5 @@ public class Soiree {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nom;
-    private long salle;
-    private LocalDateTime date;
-}
+    private long salle_id;
+    private LocalDateTime date;}

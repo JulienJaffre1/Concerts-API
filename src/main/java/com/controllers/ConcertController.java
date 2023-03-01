@@ -1,15 +1,13 @@
 package com.controllers;
 
 import com.dtos.ConcertDto;
-import com.dtos.DogDto;
-import com.services.ConcertService;
 import com.services.impl.ConcertServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/dogs")
+@RequestMapping("/concert")
 public class ConcertController {
 
     private final ConcertServiceImpl concertService;
@@ -26,7 +24,6 @@ public class ConcertController {
     public List<ConcertDto> getConcerts() {
         return concertService.getAllConcerts();
     }
-
     /**
      * Method to get the dog based on the ID
      */

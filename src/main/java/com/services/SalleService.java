@@ -1,27 +1,27 @@
 package com.services;
 
-import com.dtos.DogDto;
+import com.dtos.SalleDto;
 
 import java.util.List;
 
-public interface DogService {
+public interface SalleService {
     /**
      * Sauve a dog
      */
-    DogDto saveDog(DogDto dogDto);
+    SalleDto saveSalle(SalleDto salleDto);
 
     /**
      * Get a dog by it's id
      */
-    DogDto getDogById(Long dogId);
+    SalleDto getSalleById(Long salleId);
 
     /**
      * Delete a dog by it's id
      */
-    boolean deleteDog(Long dogId);
+    boolean deleteSalle(Long salleId);
 
     /**
      * Get all the dogs
      */
-    List<DogDto> getAllDogs();
+    List<SalleDto> getAllSalles();
 }
